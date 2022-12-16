@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    
+
+
+
+    <body style="margin : 0px; overflow: hidden;">
+
+        <a-scene arjs embedded>
+            <script>
+                document.addEventListener("DOMContentLoaded", () =>{
+                    let marker = document.querySelector("#dan");
+                    let video = document.querySelector("#dan-video");
+
+                    marker.addEventListener('markerFound', function(){
+                        var markerId = marker.id;
+                        video.play();
+                    });
+        
+                    marker.addEventListener('markerLost', function(){
+                        var markerId = marker.id;
+                        video.pause();
+                    });
+
+                    let marker1 = document.querySelector("#ivan");
+                    let video1 = document.querySelector("#ivan-video");
+                    marker1.addEventListener('markerFound', function(){
+                        var markerId = marker1.id;
+                        video1.play();
+                    });
+        
+                    marker1.addEventListener('markerLost', function(){
+                        var markerId = marker1.id;
+                        video1.pause();
+                    });
+
+                    let marker2 = document.querySelector("#uly");
+                    let video2 = document.querySelector("#uly-video");
+                    marker2.addEventListener('markerFound', function(){
+                        var markerId = marker2.id;
+                        video2.play();
+                    });
+        
+                    marker2.addEventListener('markerLost', function(){
+                        var markerId = marker2.id;
+                        video2.pause();
+                    });
+
+                    let marker3 = document.querySelector("#nekit");
+                    let video3 = document.querySelector("#nekit-video");
+                    marker3.addEventListener('markerFound', function(){
+                        var markerId = marker3.id;
+                        video3.play();
+                    });
+        
+                    marker3.addEventListener('markerLost', function(){
+                        var markerId = marker3.id;
+                        video3.pause();
+                    });
+
+                    let marker4 = document.querySelector("#city");
+                    let video4 = document.querySelector("#city-video");
+                    marker4.addEventListener('markerFound', function(){
+                        var markerId = marker4.id;
+                        video4.play();
+                    });
+        
+                    marker4.addEventListener('markerLost', function(){
+                        var markerId = marker4.id;
+                        video4.pause();
+                    });
+                });   
+            </script>
+            <a-assets>
+                <img id="logo" src="team-cube-patterns/logoGK2.png">
+                <video id="dan-video" src="team-cube-patterns/dan.MOV" loop="true"></video>
+                <video id="ivan-video" src="team-cube-patterns/ivan.MOV" loop="true"></video>
+                <video id="uly-video" src="team-cube-patterns/uly.MOV" loop="true"></video>
+                <video id="nekit-video" src="team-cube-patterns/nekit.mp4" loop="true"></video>
+                <video id="city-video" src="team-cube-patterns/city.mp4" loop="true"></video>
+            </a-assets>
+
+            <a-marker type="pattern" url="sec-task-cube/letterA.patt">
+                <a-image src="#logo"
+                rotation="-90 0 0"
+                position="0 0 -0.3"></a-image>
+                <a-text value="Горький код"
+                font="team-cube-patterns/custom-msdf.json" 
+                font-image="team-cube-patterns/custom.png"
+                rotation="-90 0 0"
+                position="-0.7 0 0.3"
+                negate="false" 
+                ></a-text>
+            </a-marker>
+
+            <a-marker id="dan" type="pattern" url="sec-task-cube/letterB.patt">
+                <a-video src="#dan-video"
+                rotation="-90 0 0"
+                width="1.5"
+                ></a-video>
+            </a-marker>
+
+            <a-marker id="ivan" type="pattern" url="sec-task-cube/letterC.patt">
+                <a-video src="#ivan-video"
+                rotation="-90 0 0"
+                width="1.5"
+                ></a-video>
+            </a-marker>
+
+            <a-marker id="uly" type="pattern" url="sec-task-cube/letterD.patt">
+                <a-video src="#uly-video"
+                rotation="-90 0 0"
+                width="1.5"
+                ></a-video>
+            </a-marker>
+
+            <a-marker id="nekit" type="pattern" url="sec-task-cube/letterF.patt">
+                <a-video src="#nekit-video"
+                rotation="-90 0 0"
+                width="1.5"
+                ></a-video>
+            </a-marker>
+
+            <a-marker id="city" type="pattern" url="sec-task-cube/letterG.patt">
+                <a-video src="#city-video"
+                rotation="-90 0 0"
+                width="1.5"
+                ></a-video>
+            </a-marker>
+            
+            <a-entity camera></a-entity>
+        </a-scene>
+        <div class="header">
+            <a href="index.html">
+                <img src="team-cube-patterns/arrow.png" alt="back" class="back-button">
+            </a>
+        </div>
+        <style>
+            .back-button {
+                height: 40px;
+                margin: 0;
+            }
+            .header {
+                background-color: rgb(29, 29, 29);
+                width: 100%;
+                opacity: 50%;
+                position: absolute;
+                top: 0;
+            }
+        </style>
+    </body>
+</html>

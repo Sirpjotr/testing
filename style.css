@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .main-body {
+    font-family: Arial, Verdana, sans-serif;
+  }
+  
+  .modules-body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-content {
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    min-height: 100vh;
+  
+    color: #fff;
+  
+    background-color: #070217;
+  }
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.team-block {
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 120px 0;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.team-block:hover {
+    background-color: rgb(182, 147, 215);
+    box-shadow: 1px 1px 15px #734f89;
+    transition: 0.2s;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 0;
+  }
+  
+  .carsds-list-item {
+    display: inline-block;
+  }
+  
+  .carsds-list-item:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+
+
+
+  .simple-tasks {
+    width: 340px;
+    background-color: rgb(148, 64, 225);
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .simple-tasks:hover {
+    background-color: rgb(182, 147, 215);
+    box-shadow: 1px 1px 15px #734f89;
+    transition: 0.2s;
+  }
+
+  .extended-tasks {
+    width: 340px;
+    background-color: rgb(130, 27, 225);
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .extended-tasks:hover {
+    background-color: rgb(182, 147, 215);
+    box-shadow: 1px 1px 15px #734f89;
+    transition: 0.2s;
+  }
+
+/*/////////////////////////////////////*/
+
+  .team-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .team-main-heading {
+    color: darkslategray;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .team-descr {
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(163, 151, 151);
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .team-ar-heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+  }
